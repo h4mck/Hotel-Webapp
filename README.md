@@ -1,1 +1,1 @@
-Django hoteel webapp
+Django hotel webapp
