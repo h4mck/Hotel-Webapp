@@ -1,5 +1,1 @@
-# talassa-hotel-webapp
-
-
-
-## Getting started
+Django hoteel webapp
