@@ -1,0 +1,9 @@
+{% load base_tags wagtailcore_tags %}
+
+{% for menuitem in menuitems %}
+    {% if request.path == menuitem.url or menuitem.url in request.path %}
+        <a href="{% pageurl menuitem %}" class="nav-item nav-link active">{{ menuitem.title }}</a>
+    {% else %}
+        <a href="{% pageurl menuitem %}" class="nav-item nav-link">{{ menuitem.title }}</a>
+    {% endif %}
+{% endfor %}
